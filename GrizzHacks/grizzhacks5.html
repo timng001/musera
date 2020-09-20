@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Musera</title>
+    <link rel = "icon" href = "icon.png" type = "image/x-icon">
+</head>
+<style>
+
+</style>
+<body>
+<div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+    <form action="https://google.com/search" target="_blank" type="GET">
+        <input type="search" name="q" placeholder="Google Search..."></form>
+</div>
+
+<!--JAVASCRIPT FOR GOOGLE SEARCH-->
+<script type="text/javascript">
+    var form = document.querySelector("form");
+
+    form.addEventListener("submit", function(e) {
+        var search = form.querySelector("input[type=search]");
+        search.value = search.value;
+        form.submit();
+    })
+</script>
+<div class="main" id="section1">
+
+    <div class="logo"><img src="logo.png"></div>
+    <p>Listen to your favorite songs from any era!</p>
+
+    <button type="button" id="button" onclick="play()">Click to Play</button>
+
+    <script type="text/javascript">
+
+    </script>
+</div>
+<div class="main" id="section2">
+    <p>Song 1</p>
+    <input type="image" src="https://i.scdn.co/image/ab67616d0000b27384be563c5931d7ef35706148"
+           name="saveForm" style="width: 300px; height: 300px; vertical-align:middle;"
+           class="btTxt submit" id="saveForm" />
+    <video controls="" autoplay="" name="media">
+        <source src="https://p.scdn.co/mp3-preview/56fcd9561959e15ccbef57a0926e1257c636ab5e?cid=e78d1681d51f4d899b6bd2f8cc4a01c5" type="audio/mpeg">
+    </video>
+</div>
+<div class="main" id="section3">
+    <p>Song 2</p>
+    <input type="image" src="https://i.scdn.co/image/ab67616d0000b27384be563c5931d7ef35706148"
+           name="saveForm" style="width: 300px; height: 300px;"
+           class="btTxt submit" id="saveForm" />
+    <video controls="" autoplay="" name="media">
+        <source src="https://p.scdn.co/mp3-preview/56fcd9561959e15ccbef57a0926e1257c636ab5e?cid=e78d1681d51f4d899b6bd2f8cc4a01c5" type="audio/mpeg">
+    </video>
+</div>
+<div class="main" id="section4">
+    <p>Song 3</p>
+    <input type="image" src="https://i.scdn.co/image/ab67616d0000b27384be563c5931d7ef35706148"
+           name="saveForm" style="width: 300px; height: 300px;"
+           class="btTxt submit" id="saveForm" />
+    <video controls="" autoplay="" name="media">
+        <source src="https://p.scdn.co/mp3-preview/56fcd9561959e15ccbef57a0926e1257c636ab5e?cid=e78d1681d51f4d899b6bd2f8cc4a01c5" type="audio/mpeg">
+    </video>
+</div>
+<div class="main" id="section5">
+    <p>Song 4</p>
+    <input type="image" src="https://i.scdn.co/image/ab67616d0000b27384be563c5931d7ef35706148"
+           name="saveForm" style="width: 300px; height: 300px;"
+           class="btTxt submit" id="saveForm" />
+    <video controls="" autoplay="" name="media">
+        <source src="https://p.scdn.co/mp3-preview/56fcd9561959e15ccbef57a0926e1257c636ab5e?cid=e78d1681d51f4d899b6bd2f8cc4a01c5" type="audio/mpeg">
+    </video>
+</div>
+<div class="main" id="section6">
+    <p>Song 5</p>
+    <input type="image" src="https://i.scdn.co/image/ab67616d0000b27384be563c5931d7ef35706148"
+           name="saveForm" style="width: 300px; height: 300px;"
+           class="btTxt submit" id="saveForm" />
+    <video controls="" autoplay="" name="media">
+        <source src="https://p.scdn.co/mp3-preview/56fcd9561959e15ccbef57a0926e1257c636ab5e?cid=e78d1681d51f4d899b6bd2f8cc4a01c5" type="audio/mpeg">
+    </video>
+</div>
+</body>
+<!--JAVASCRIPT FOR STICKY NAV BAR-->
+<script type="text/javascript">
+    window.onscroll = function() {myFunction()};
+
+    var topnav = document.getElementById("navbar");
+    var sticky = topnav.offsetTop;
+
+    function myFunction(){
+        if (window.pageYOffset >= sticky){
+            topnav.classList.add("sticky")
+        } else {
+            topnav.classList.remove("sticky")
+        }
+    }
+</script>
+</html>
+

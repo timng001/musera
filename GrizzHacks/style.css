@@ -1,0 +1,119 @@
+/*Scroll bar*/
+.scrollable-content{
+    overflow-x:hidden;
+    overflow-y:scroll;
+}
+::-webkit-scrollbar {
+    width: 0.7em;
+    background: transparent;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: dimgrey;
+}
+
+/* Handle on hover
+::-webkit-scrollbar-thumb:hover {
+    background: #c76914;
+}
+*/
+/*Nav bar*/
+.topnav {
+    background-color: mediumpurple;
+    overflow: hidden;
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover{
+    background-color: blueviolet;
+    color: white;
+}
+.topnav a.active{
+    background-color: blueviolet;
+    color: white;
+}
+.content{
+    padding: 16px;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.sticky + .content{
+    padding-top: 60px;
+}
+form{
+    position: absolute;
+    right: 50px;
+    width: 300px;
+}
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(0deg, blueviolet, skyblue);
+    color:antiquewhite;
+
+
+    background-position: center;
+    text-align: center;
+    font-size: 30px;
+    mso-generic-font-family: swiss;
+    font-family: "Calibri";
+}
+#section1{
+    background-image: linear-gradient(0deg, blueviolet, skyblue);
+}
+.main {
+    height: 100%;
+    background-image: linear-gradient(0deg, skyblue, blueviolet, skyblue);
+    margin: auto;
+}
+p{
+    border: solid 5px mediumpurple;
+    border-style: outset;
+    background-color: mediumpurple;
+    text-align: center;
+}
+.btTxt {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.column {
+    float: left;
+    width: 50%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+#button {
+    background-color: blueviolet;
+    color: white;
+    border: solid 4px antiquewhite;
+    padding: 15px;
+    text-align: center;
+    font-size: 22px;
+    margin: 4px;
+}
